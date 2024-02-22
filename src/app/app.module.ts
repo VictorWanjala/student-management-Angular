@@ -9,6 +9,8 @@ import { ListStudentComponent } from './comps/list-student/list-student.componen
 import { LoginStudentComponent } from './comps/login-student/login-student.component';
 import { RegistrationStudentComponent } from './comps/registration-student/registration-student.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ListStudentComponent,
     LoginStudentComponent,
     RegistrationStudentComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
